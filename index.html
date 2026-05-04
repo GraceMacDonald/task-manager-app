@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Container-->
+    <div class="container">
+      <h1>Task Manager</h1>
+
+      <!-- class Input Section-->
+      <div class="input-group">
+        <label for="taskInput" class="visually-hidden">Add a task</label>
+        <form class="input-group">
+          <input type="text" id="taskInput" placeholder="Enter a task" />
+          <button id="addTask" type="submit">Add</button>
+        </form>
+      </div>
+
+      <!--Task Counter -->
+      <p id="taskCounter">0 tasks left</p>
+
+      <!-- id Filters -->
+      <div class="filters" role="group" aria-label="Task filters">
+        <button id="filterAll">All</button>
+        <button id="filterActive">Active</button>
+        <button id="filterCompleted">Completed</button>
+      </div>
+
+      <div class="clear-container">
+        <button id="clearCompleted">Clear Completed</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
